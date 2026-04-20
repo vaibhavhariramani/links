@@ -1,522 +1,732 @@
-    <style>
-    body{
-       
-   
-
-         background: linear-gradient(135deg, #79F1A4 0%, #0E5CAD 100%) !important;
-                     }
-     #block{
-        border-radius:50px;
-        
-    }
-    #block div{
-              }
-    </style>
-      <style>
-             </style>
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-  
-<!-- Mirrored from vaibhavhariramani.contactin.bio/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 28 Nov 2020 15:03:48 GMT -->
 <head>
-      
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Vaibhav Hariramani's Link tree">
-    <meta name="keywords" content="">
-
-    <title>    Vaibhavhariramani - Link's List</title>
-     
-        
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@vaibhavhariramani" />
-<meta name="twitter:title" content="   
-        @vaibhavhariramani" />
-<meta name="twitter:description" content="   Personalize Your Social Media Traffic." />
-<meta name="twitter:image" content="https://contactinbio.com/upload/4841571606555215.jpg" />
-<meta property="og:image" content="https://contactinbio.com/upload/4841571606555215.jpg" />
-
-     
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/social.css" >
-   
-    <link href="assets/css/core.min.css" rel="stylesheet">
-      <link href="assets/css/core.min.css" rel="stylesheet">
-        <link href="css/paymentfont.min.css" rel="stylesheet">
-    <link href="assets/css/thesaas.minf9e3.css?v=1.1" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
-    <style>
-    .slick-slide img{
-        margin:0 auto;
-    }
-
-
-    </style>
-<link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
-
-
-
-    <!-- Favicons -->
-     <link rel="apple-touch-icon" sizes="180x180" href="assets-landing/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets-landing/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets-landing/favicon/favicon-16x16.png">
-<link rel="manifest" href="assets-landing/favicon/site.html">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
-
-<!--<link rel="manifest" href="upload//site.webmanifest"/>-->
-<link rel="mask-icon" href="upload/safari-pinned-tab.svg" color="#5bbad5"/>
-
-
-
-<meta name="msapplication-TileColor" content="#da532c"/>
-<meta name="theme-color" content="#ffffff"/>
-
-    <!--  Open Graph Tags -->
-
-   
-   <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0' >
- 
-    </head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vaibhav Hariramani — Ghummakkad Bawa</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
+  :root {
+    --bg: #0a0a0f;
+    --surface: #13131a;
+    --surface2: #1c1c26;
+    --border: rgba(255,255,255,0.07);
+    --border-hover: rgba(255,255,255,0.18);
+    --text: #f0ede8;
+    --muted: #8a8794;
+    --accent: #c8f5a0;
+    --accent2: #7eb8f7;
+    --accent3: #f7a07e;
+    --accent4: #f0c070;
+    --accent-yt: #ff6b6b;
+    --accent-ig: #e879b0;
+    --glow-green: rgba(200, 245, 160, 0.12);
+    --glow-blue: rgba(126, 184, 247, 0.12);
+  }
 
-.user-area{
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    top: -200px; left: -200px;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(200,245,160,0.06) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  body::after {
+    content: '';
+    position: fixed;
+    bottom: -200px; right: -200px;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(126,184,247,0.06) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .noise {
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.4;
+  }
+
+  .page {
+    position: relative;
+    z-index: 1;
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 60px 24px 80px;
+  }
+
+  .profile {
     text-align: center;
-    margin-top: 20px;
-    padding-top: 15px
-}
+    margin-bottom: 48px;
+    animation: fadeUp 0.7s ease both;
+  }
 
-#blocks{
-    margin-top:2px;
-}
+  .avatar-wrap {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
 
-#block{
-        margin-bottom: 12px;
-        font-size: 1.2em !important;
-        padding: 10px 0;
-            color: #fff !important;
+  .avatar {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    background: var(--surface2);
+    border: 2px solid var(--border-hover);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: -1px;
+    overflow: hidden;
+  }
 
-    background-color: #fff !important;
-    text-align: center;
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .avatar-ring {
+    position: absolute;
+    inset: -5px;
+    border-radius: 50%;
+    background: conic-gradient(var(--accent), var(--accent2), var(--accent3), var(--accent), var(--accent2), var(--accent));
+    z-index: -1;
+    animation: spin 6s linear infinite;
+    opacity: 0.7;
+  }
+
+  .avatar-ring::before {
+    content: '';
+    position: absolute;
+    inset: 3px;
+    border-radius: 50%;
+    background: var(--bg);
+  }
+
+  .name {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(24px, 5vw, 30px);
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 4px;
+    line-height: 1.2;
+  }
+
+  .handle {
+    font-size: 13px;
+    color: var(--muted);
+    letter-spacing: 0.5px;
+    margin-bottom: 16px;
+  }
+
+  .handle span {
+    color: var(--accent);
+  }
+
+  .bio {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #b0adb8;
+    max-width: 380px;
+    margin: 0 auto;
+  }
+
+  .bio strong {
+    color: var(--text);
+    font-weight: 500;
+  }
+
+  .section-label {
+    font-size: 10px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 16px;
+    margin-top: 40px;
+    padding-left: 2px;
+  }
+
+  .links-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    animation: fadeUp 0.7s 0.2s ease both;
+  }
+
+  .link-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 20px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    text-decoration: none;
+    color: var(--text);
+    transition: all 0.25s ease;
     position: relative;
     overflow: hidden;
-    -webkit-transition: all .25s cubic-bezier(.08,.59,.29,.99);
-    transition: all .25s cubic-bezier(.08,.59,.29,.99);
-    z-index: 2;
-}
-.slick-slide{
-    height:  auto !important;
-}
-</style>
- 
- 
-  <body style="background: #f5f7f9;">
-      
-            
-      
-                 
-       <div class="container" style="">
-           
-           
-<div class="user-area">
-    <div class="col-12" >
-        <div style="   margin-bottom: 12px;display: block;
-    margin-left: auto;
-    margin-right: auto;
-" >
-            
-                 
-  
-     <div style="background:url('upload/4841571606555215.jpg');background-size:cover;width: 100px;
-    height: 100px;
-    vertical-align: middle;
-    background-color: rgba(0,0,0,.1);
-  border-radius: 50%;  background-size: cover;
-                                          background-repeat: no-repeat;
-                                          background-position: 50% 50%;margin:0 auto; vertical-align:middle;display: inline-block;">
-</div>
-            
-  
-<br><!--
-<img src="https://contactinbio.com/upload/4841571606555215.jpg" style=" vertical-align:middle;display: inline-block;
-    height: 100px;
-    width: 100px;  max-width:none !important;
+  }
 
+  .link-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .link-card:hover {
+    border-color: var(--border-hover);
+    transform: translateY(-2px);
+  }
+
+  .link-card:hover::before { opacity: 1; }
+
+  .link-card.yt::before { background: radial-gradient(ellipse at left, rgba(255,107,107,0.08), transparent 70%); }
+  .link-card.ig::before { background: radial-gradient(ellipse at left, rgba(232,121,176,0.08), transparent 70%); }
+  .link-card.web::before { background: radial-gradient(ellipse at left, rgba(126,184,247,0.08), transparent 70%); }
+  .link-card.ml::before { background: radial-gradient(ellipse at left, rgba(200,245,160,0.08), transparent 70%); }
+  .link-card.blog::before { background: radial-gradient(ellipse at left, rgba(240,192,112,0.08), transparent 70%); }
+  .link-card.app::before { background: radial-gradient(ellipse at left, rgba(247,160,126,0.08), transparent 70%); }
+
+  .link-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .link-icon.yt { background: rgba(255,107,107,0.12); }
+  .link-icon.ig { background: rgba(232,121,176,0.12); }
+  .link-icon.web { background: rgba(126,184,247,0.12); }
+  .link-icon.ml { background: rgba(200,245,160,0.12); }
+  .link-icon.blog { background: rgba(240,192,112,0.12); }
+  .link-icon.app { background: rgba(247,160,126,0.12); }
+  .link-icon.gh { background: rgba(255,255,255,0.07); }
+  .link-icon.wa { background: rgba(37,211,102,0.12); }
+  .link-icon.med { background: rgba(255,255,255,0.07); }
+
+  .link-text {
+    flex: 1;
+    position: relative;
+    z-index: 1;
+  }
+
+  .link-title {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 2px;
+  }
+
+  .link-sub {
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  .link-arrow {
+    font-size: 16px;
+    color: var(--muted);
+    position: relative;
+    z-index: 1;
+    transition: transform 0.2s ease, color 0.2s ease;
+  }
+
+  .link-card:hover .link-arrow {
+    transform: translateX(3px);
+    color: var(--text);
+  }
+
+  .analytics {
+    animation: fadeUp 0.7s 0.4s ease both;
+  }
+
+  .analytics-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  @media (min-width: 480px) {
+    .analytics-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .stat-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px 18px;
+    transition: border-color 0.25s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .stat-card:hover { border-color: var(--border-hover); }
+
+  .stat-card.yt-card::after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 80px; height: 80px;
+    background: radial-gradient(circle at top right, rgba(255,107,107,0.12), transparent 70%);
+  }
+
+  .stat-card.ig-card::after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 80px; height: 80px;
+    background: radial-gradient(circle at top right, rgba(232,121,176,0.12), transparent 70%);
+  }
+
+  .stat-platform {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .platform-dot {
+    width: 8px; height: 8px;
     border-radius: 50%;
-    ">
- -->
-            </div>
-          </div>
-       
- 
-     </div>
-   
-
-                     
-      
- <div id="blocks"  style="max-width: 700px;text-align:center;" class="container">
-<div id="block" style="overflow:visible;background: none  !important ;border:none;border-radius:0px;color: #FFFFFF !important;font-size:18px !important;    text-align:center !important; ">
-     <p><span style="font-family: Tahoma;">﻿</span>
-        <span style="font-family: Tahoma;" arial="" black";="" background-color:="" rgb(255,="" 255,="" 255);"="">About Me</span>
-    </p>
-    <p><span style="font-family: Tahoma;" arial="" black";="" background-color:="" rgb(255,="" 255,="" 255);"="">
-        <ul class="author__urls social-icons" style="box-sizing: border-box; margin: 0px; orphans: 3; widows: 3; position: relative; right: 0px; padding: 0px; list-style-type: none; border: 0px; border-radius: 4px; background: transparent; box-shadow: none; cursor: default;"></ul>
-    </span>
-</p>
-<p style="box-sizing: border-box; margin-bottom: 1.3em; margin-top: 0px; orphans: 3; widows: 3; transition: all 0.2s ease-in-out 0s; line-height: 1.5;">
-    <span style="box-sizing: inherit;">Hi There , I’m <b>Vaibhav Hariramani!</b>, just a silly geek with some Knowledge of Programming , seeking for some attention in this small World I create Videos &amp; blog posts on open source projects mainly about Machine Learning, Computer Vision and App Development.</span>
-</p>
-<!--
-<p><span style="font-family: Tahoma;" arial="" black";="" background-color:="" rgb(255,="" 255,="" 255);"=""> and offerings&nbsp;</span></p>
-<p><b>Service 1</b></p>
-<p>Your service details</p>
-<p><b>Service 2</b></p>
-<p>Your service details</p>    
--->
-</div>
-<a href="https://youtu.be/LjimwLpWjto" >
-
-    <div id="block"
-        style=" padding: 14px !important;border: 2px #fff solid !important; background: transparent !important; background-color: transparent !important; ; ">
-        <div style=" font-size:18px !important;; font-weight: 600 ; display:inline-block;color: #fff;">
-            <div class="fa fa-youtube" style="display:inline-block;"></div> Jaipur Vlog - Youtube
-        </div>
-
-    </div>
-</a>
-
-</li>
-
-                     
-<a href="https://vaibhavhariramani.com/" >
-
-    <div id="block"
-        style=" padding: 14px !important;border: 2px #fff solid !important; background: transparent !important; background-color: transparent !important; ; ">
-        <div style=" font-size:18px !important;; font-weight: 600 ; display:inline-block;color: #fff;">
-            <div class="fa fa-globe" style="display:inline-block;"></div> My portfolio Website
-        </div>
-
-    </div>
-</a>
-
-</li>
-<a href="projects/projects.html" >
-
-    <div id="block"
-        style=" padding: 14px !important;border: 2px #fff solid !important; background: transparent !important; background-color: transparent !important; ; ">
-        <div style=" font-size:18px !important;; font-weight: 600 ; display:inline-block;color: #fff;">
-            <div class="fa fa-globe" style="display:inline-block;"></div> My projects
-        </div>
-
-    </div>
-</a>
-</li>
-<a href="ml/model.html">
-
-    <div id="block"
-        style=" padding: 14px !important;border: 2px #fff solid !important; background: transparent !important; background-color: transparent !important; ; ">
-        <div style=" font-size:18px !important;; font-weight: 600 ; display:inline-block;color: #fff;">
-            <div class="fa fa-globe" style="display:inline-block;"></div> My Machine learning Models
-        </div>
-
-    </div>
-</a>
-</li>
-<a href="https://medium.com/geeky-bawa" >
-
-    <div id="block"
-        style=" padding: 14px !important;border: 2px #fff solid !important; background: transparent !important; background-color: transparent !important; ; ">
-        <div style=" font-size:18px !important;; font-weight: 600 ; display:inline-block;color: #fff;">
-            <div class="fa fa-medium" style="display:inline-block;"></div> My Medium Blogs
-        </div>
-
-    </div>
-</a>
-</li>
-<a href="Youtube/youtube.html" >
-
-    <div id="block"
-        style=" padding: 14px !important;border: 2px #fff solid !important; background: transparent !important; background-color: transparent !important; ; ">
-        <div style=" font-size:18px !important;; font-weight: 600 ; display:inline-block;color: #fff;">
-            <div class="fa fa-youtube" style="display:inline-block;"></div> Youtube Channels
-        </div>
-
-    </div>
-</a>
-</li>
-<a href="https://vaibhavhariaramani.github.io/blogs/" >
-
-    <div id="block"
-        style=" padding: 14px !important;border: 2px #fff solid !important; background: transparent !important; background-color: transparent !important; ; ">
-        <div style=" font-size:18px !important;; font-weight: 600 ; display:inline-block;color: #fff;">
-            <div class="fa fa-soundcloud" style="display:inline-block;"></div> My Blog page
-        </div>
-
-    </div>
-</a>
-</li>
-<a href="AppStore/appStore.html" >
-
-    <div id="block"
-        style=" padding: 14px !important;border: 2px #fff solid !important; background: transparent !important; background-color: transparent !important; ; ">
-        <div style=" font-size:18px !important;; font-weight: 600 ; display:inline-block;color: #fff;">
-            <div class="socicon-appstore" style="display:inline-block;color:#"></div> Our App Store
-        </div>
-
-    </div>
-</a>
-</li>
-<a href="https://geekydevelopersteam.github.io/" >
-
-    <div id="block"
-        style=" padding: 14px !important;border: 2px #fff solid !important; background: transparent !important; background-color: transparent !important; ; ">
-        <div style=" font-size:18px !important;; font-weight: 600 ; display:inline-block;color: #fff;">
-            <div class="fa fa-globe" style="display:inline-block;"></div> Our Freelancing Services
-        </div>
-
-    </div>
-</a>
-</li>
-
-<a  href="http://wa.me/917790991077?text=Hey+Vaibhav!+HIT_ENTER" style="color:#fff !important;" target="_blank">
-<div id="block" style="border: 2px #fff solid !important;background: transparent !important; background-color: transparent !important;background: none  !important;border:none;padding:0px;">
-<div class="" style="        padding: 15px 0;border-color: #25D366;font-size:18px !important;"  onclick="openwhatsapp()">
-    <i class="fa fa-whatsapp" aria-hidden="true" ></i> <b> get connected</b></div>
-</div>   
-</a>
- </li>
-
- 
-                     
-<a href="https://play.google.com/store/apps/details?id=com.geeky.developer">
-
-    <div id="block"
-        style=" padding: 14px !important;border: 2px #fff solid !important; background: transparent !important; background-color: transparent !important; ; ">
-        <div style=" font-size:18px !important;; font-weight: 600 ; display:inline-block;color: #fff;">
-            <div class="socicon-appstore" style="display:inline-block;color:#"></div> Download THE VAIBHAV HARIRAMANI APP 
-        </div>
-
-    </div>
-</a>
-</li>
-     
-                                      
-                     
-
-     
-<a href="https://www.linkedin.com/in/vaibhav-hariramani/" target="_blank">
-                         
-<div id="block" style=" border: 2px #fff solid !important;background: transparent !important; background-color: transparent !important;border:none;padding: 15px 0;color:#fff !important; width:10%;display:inline-block;   font-size:18px !important;">
-<div class="ti-linkedin" style="display:inline-block;color:#"></div>                 </div>
-            
-</a>
-</li>
-                     
- <a href="https://www.google.com/search?q=VAIBHAV+HARIRAMANI&biw=1528&bih=663&sxsrf=ALeKk027APGWzY7KTiMkIzBU5vTVq2LS7w%3A1618673411539&ei=A_96YJC1IPuW4-EPyv-JwA0&oq=VAIBHAV+HARIRAMANI&gs_lcp=Cgdnd3Mtd2l6EAxQAFgAYDVoAHAAeACAAQCIAQCSAQCYAQCqAQdnd3Mtd2l6&sclient=gws-wiz&ved=0ahUKEwjQws6tzIXwAhV7yzgGHcp_AtgQ4dUDCA4" target="_blank">
-                         
-                           <div id="block" style=" border: 2px #fff solid !important;background: transparent !important; background-color: transparent !important;border:none;padding: 15px 0;color:#fff !important; width:10%;display:inline-block;   font-size:18px !important;">
-                          <div class="fa fa-google-plus-official" style="display:inline-block;color:#"></div>                 </div>
-            
-            </a>
-            </li>
-                     
-
-     
-                               <a href="https://twitter.com/VAIBHAVHARIRAM2" target="_blank">
-                         
-                           <div id="block" style=" border: 2px #fff solid !important;background: transparent !important; background-color: transparent !important;border:none;padding: 15px 0;color:#fff !important; width:10%;display:inline-block;   font-size:18px !important;">
-                          <div class="ti-twitter" style="display:inline-block;color:#"></div>                 </div>
-            
-            </a>
-            
-
-                         </li>
-                     
-
-     
-                               <a href="https://github.com/vaibhavhariaramani" target="_blank">
-                         
-                           <div id="block" style=" border: 2px #fff solid !important;background: transparent !important; background-color: transparent !important;border:none;padding: 15px 0;color:#fff !important; width:10%;display:inline-block;   font-size:18px !important;">
-                          <div class="ti-github" style="display:inline-block;color:#"></div>                 </div>
-            
-            </a>
-            
-
-                         </li>
-                     
-
-     
-                               <a href="https://sites.google.com/view/geeky-traveller/homehttps://sites.google.com/view/geeky-traveller/home" target="_blank">
-                         
-                           <div id="block" style=" border: 2px #fff solid !important;background: transparent !important; background-color: transparent !important;border:none;padding: 15px 0;color:#fff !important; width:10%;display:inline-block;   font-size:18px !important;">
-                          <div class="ti-soundcloud" style="display:inline-block;color:#"></div>                 </div>
-            
-            </a>
-            
-
-                         </li>
-                     
-
-     
-                               <a href="https://www.instagram.com/geeky_bawa_/" target="_blank">
-                         
-                           <div id="block" style=" border: 2px #fff solid !important;background: transparent !important; background-color: transparent !important;border:none;padding: 15px 0;color:#fff !important; width:10%;display:inline-block;   font-size:18px !important;">
-                          <div class="fa fa-instagram" style="display:inline-block;color:#"></div>                 </div>
-            
-            </a>
-            
-
-                         </li>
-                     
-
-     
-                               <a href="https://play.google.com/store/apps/developer?id=VAIBHAV+HARIRAMANI" target="_blank">
-                         
-                           <div id="block" style=" border: 2px #fff solid !important;background: transparent !important; background-color: transparent !important;border:none;padding: 15px 0;color:#fff !important; width:10%;display:inline-block;   font-size:18px !important;">
-                          <div class="socicon-appstore" style="display:inline-block;color:#"></div>                 </div>
-            
-            </a>
-            
-
-                         </li>
-                     
-
-     
-                               <a href="https://discord.gg/cXY3pY7a" target="_blank">
-                         
-                           <div id="block" style=" border: 2px #fff solid !important;background: transparent !important; background-color: transparent !important;border:none;padding: 15px 0;color:#fff !important; width:10%;display:inline-block;   font-size:18px !important;">
-                          <div class="ti-dashboard" style="display:inline-block;color:#"></div>                 </div>
-            
-            </a>
-            
-
-                         </li>
-                        
-          </div>
-        </div>
-      
-      </div>
-      <!-- Glob
-      al site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-41508023-26"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-41508023-26');
-</script>
-
-      
-
-    <!-- Footer -->    
-   <!-- <a href="https://www.contactinbio.com/" class="container">   
-    <footer class="site-footer" style="border:none;margin-top:50px;    font-size: 0.50rem !important;">
-        <div style="margin:0 auto;text-align:center;">
-<img src="../www.contactinbio.com/assets-landing/img/contactinbio-logo.png" id="clogo"   width="140">
-<img src="../www.contactinbio.com/assets-landing/img/contactinbio-logo-white.png" id="clogo-white"  style="display:none;" width="140">
-
-                <br><span style="color:#1b364a; " id="footertext">Create similar page for free </span>
-                </div>
-      
-    </footer>
-    </a> -->
-    
-        <!-- END Footer -->
-
-<script>
-
-
-
-
-
-
-
-function sendanonymous(){
-
-
-$(document).ready(function() {
-
-var message2 = $('#message2').val();
-
-
-        
-        $.post("contactanonymous.html",
-        {
-         
-          message: message2,
-          userid: "98907"
-        },
-        function(data,status){
-            document.getElementById("contact-success2").style.display="block";
-            setTimeout(function(){
-                  document.getElementById("contact-success2").style.display="none";
-                
-            }, 5000);
-        //    alert("Data: " + data + "\nStatus: " + status);
-        });
-        
-})
-   
-
-}
-
-</script>
-
-    <!-- Scripts -->
-        <script src="assets/js/core.min.js"></script>
-    <script src="assets/js/thesaas.min.js"></script>
-    <script src="assets/js/script.js"></script>
-  <script type="text/javascript" src="../cdn.jsdelivr.net/npm/slick-carousel%401.8.1/slick/slick.min.js"></script>
-	
- <style>
- .slick-slider { display: table; table-layout: fixed; width: 100%; }
-
-
- </style>
-  <script>
-   $('.single-item').slick({
-       dots: true,
-    /* Just changed this to get the bottom dots navigation */
-    infinite: true,
-    speed: 300,
-    arrows:true,
-    adaptiveHeight: true
-       
-   });
-
-
-  </script>
-  
-  <script>
-/*
-$( '#blocks div' ).each(function () {
- $(this).css('background-color', 'transparent');  
-});
-*/
-</script>
-<style>
-/*
-
-#blocks #block{
-background: transparent !important;
-background-color: transparent !important;
-}
-*/
-
+  }
+
+  .platform-dot.yt { background: var(--accent-yt); }
+  .platform-dot.ig { background: var(--accent-ig); box-shadow: 0 0 6px rgba(232,121,176,0.5); }
+
+  .platform-name {
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 500;
+  }
+
+  .stat-metrics {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .stat-item { }
+
+  .stat-value {
+    font-size: 22px;
+    font-weight: 500;
+    font-family: 'Playfair Display', serif;
+    line-height: 1;
+    margin-bottom: 3px;
+  }
+
+  .stat-value.yt-color { color: var(--accent-yt); }
+  .stat-value.ig-color { color: var(--accent-ig); }
+
+  .stat-label {
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.3px;
+  }
+
+  .stat-divider {
+    height: 1px;
+    background: var(--border);
+    margin: 10px 0;
+  }
+
+  .update-note {
+    font-size: 11px;
+    color: var(--muted);
+    text-align: center;
+    margin-top: 12px;
+    opacity: 0.7;
+  }
+
+  .update-note a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  .socials-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+    animation: fadeUp 0.7s 0.6s ease both;
+    flex-wrap: wrap;
+  }
+
+  .social-pill {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 99px;
+    text-decoration: none;
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    letter-spacing: 0.3px;
+  }
+
+  .social-pill:hover {
+    border-color: var(--border-hover);
+    color: var(--text);
+    transform: translateY(-1px);
+  }
+
+  .social-pill svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 12px;
+    color: var(--muted);
+    opacity: 0.5;
+    animation: fadeUp 0.7s 0.7s ease both;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+
+  @media (max-width: 400px) {
+    .page { padding: 40px 16px 60px; }
+    .analytics-grid { grid-template-columns: 1fr; }
+    .stat-card { display: flex; align-items: center; gap: 16px; }
+    .stat-platform { margin-bottom: 0; }
+    .stat-metrics { flex-direction: row; gap: 16px; }
+  }
 </style>
-  </body>
+</head>
+<body>
+<div class="noise"></div>
+<div class="page">
 
-<!-- Mirrored from vaibhavhariramani.contactin.bio/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 28 Nov 2020 15:04:14 GMT -->
+  <!-- PROFILE -->
+  <div class="profile">
+    <div class="avatar-wrap">
+      <div class="avatar-ring"></div>
+      <div class="avatar">VH</div>
+    </div>
+    <div class="name">Vaibhav Hariramani</div>
+    <div class="handle">@<span>ghummakkad_bawa_</span> &nbsp;·&nbsp; @<span>GhummakkadBawa</span></div>
+    <p class="bio">
+      Silly geek turned <strong>Ghummakkad (wanderer)</strong>. I create videos &amp; blog posts on
+      <strong>Machine Learning</strong>, <strong>Computer Vision</strong> and
+      <strong>App Dev</strong> — sprinkled with travel from every corner of India.
+    </p>
+  </div>
+
+  <!-- ANALYTICS -->
+  <!-- <div class="analytics">
+    <div class="section-label">Live Stats</div>
+    <div class="analytics-grid">
+
+      YouTube Card 
+      <div class="stat-card yt-card">
+        <div class="stat-platform">
+          <div class="platform-dot yt"></div>
+          <span class="platform-name">YouTube</span>
+        </div>
+        <div class="stat-metrics">
+          <div class="stat-item">
+            <div class="stat-value yt-color" id="yt-subs">—</div>
+            <div class="stat-label">Subscribers</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-value yt-color" id="yt-views">—</div>
+            <div class="stat-label">Total Views</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-value yt-color" id="yt-videos">—</div>
+            <div class="stat-label">Videos</div>
+          </div>
+        </div>
+      </div>
+
+      Instagram Card
+      <div class="stat-card ig-card">
+        <div class="stat-platform">
+          <div class="platform-dot ig"></div>
+          <span class="platform-name">Instagram</span>
+        </div>
+        <div class="stat-metrics">
+          <div class="stat-item">
+            <div class="stat-value ig-color" id="ig-followers">—</div>
+            <div class="stat-label">Followers</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-value ig-color" id="ig-posts">—</div>
+            <div class="stat-label">Posts</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-value ig-color" id="ig-following">—</div>
+            <div class="stat-label">Following</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <p class="update-note">
+      Stats shown above are manually updated.
+      <a href="https://www.youtube.com/@GhummakkadBawa" target="_blank">Check live on YouTube</a>
+      &nbsp;·&nbsp;
+      <a href="https://www.instagram.com/ghummakkad_bawa_/" target="_blank">Instagram</a>
+    </p>
+  </div>
+
+  LINKS -->
+  <div class="links-grid">
+    <div class="section-label" style="margin-top:32px;">My Work</div>
+
+    <a href="https://www.youtube.com/@GhummakkadBawa" target="_blank" class="link-card yt">
+      <div class="link-icon yt">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#ff6b6b"><path d="M23.5 6.2s-.3-2-1.2-2.8c-1.1-1.2-2.4-1.2-3-1.3C16.8 2 12 2 12 2s-4.8 0-7.3.1c-.6.1-1.9.1-3 1.3C.8 4.2.5 6.2.5 6.2S.2 8.5.2 10.8v2.1c0 2.3.3 4.6.3 4.6s.3 2 1.2 2.8c1.1 1.2 2.6 1.1 3.3 1.2C7.2 21.7 12 21.8 12 21.8s4.8 0 7.3-.3c.6-.1 1.9-.1 3-1.3.9-.8 1.2-2.8 1.2-2.8s.3-2.3.3-4.6v-2.1c0-2.3-.3-4.6-.3-4.6zM9.7 15.5V8.4l8.1 3.6-8.1 3.5z"/></svg>
+      </div>
+      <div class="link-text">
+        <div class="link-title">Ghummakkad Bawa — YouTube</div>
+        <div class="link-sub">Travel vlogs &amp; adventure stories</div>
+      </div>
+      <span class="link-arrow">→</span>
+    </a>
+
+    <a href="https://drive.google.com/file/d/south_africa_evisa_guide" target="_blank" class="link-card web">
+      <div class="link-icon web">🇿🇦</div>
+      <div class="link-text">
+        <div class="link-title">South Africa e-Visa Guide</div>
+        <div class="link-sub">Step-by-step PDF guide — Google Drive</div>
+      </div>
+      <span class="link-arrow">→</span>
+    </a>
+
+    <a href="https://drive.google.com/file/d/uk_india_yps_guide" target="_blank" class="link-card web">
+      <div class="link-icon web">🇬🇧</div>
+      <div class="link-text">
+        <div class="link-title">UK Work Visa with Sponsorship</div>
+        <div class="link-sub">UK–India YPS complete guide — Google Drive</div>
+      </div>
+      <span class="link-arrow">→</span>
+    </a>
+
+    <a href="https://www.instagram.com/ghummakkad_bawa_/" target="_blank" class="link-card ig">
+      <div class="link-icon ig">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#e879b0"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8 0 3.2 0 3.6-.1 4.8-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.9.1-3.2 0-3.6 0-4.8-.1-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12c0-3.2 0-3.6.1-4.8.1-3.2 1.6-4.8 4.9-4.9 1.2-.1 1.6-.1 4.8-.1zM12 0C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1.0 8.3 0 8.7 0 12s0 3.7.1 4.9C.3 21.3 2.7 23.7 7.1 23.9 8.3 24 8.7 24 12 24s3.7 0 4.9-.1c4.4-.2 6.8-2.6 7-7C24 15.7 24 15.3 24 12s0-3.7-.1-4.9C23.7 2.7 21.3.3 16.9.1 15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 100 12.4A6.2 6.2 0 0012 5.8zM12 16a4 4 0 110-8 4 4 0 010 8zm6.4-11.9a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z"/></svg>
+      </div>
+      <div class="link-text">
+        <div class="link-title">Instagram — @ghummakkad_bawa_</div>
+        <div class="link-sub">Reels, stories &amp; travel photos</div>
+      </div>
+      <span class="link-arrow">→</span>
+    </a>
+
+    <a href="https://vaibhavhariramani.com/" target="_blank" class="link-card web">
+      <div class="link-icon web">🌐</div>
+      <div class="link-text">
+        <div class="link-title">Portfolio Website</div>
+        <div class="link-sub">Projects, resume &amp; work showcase</div>
+      </div>
+      <span class="link-arrow">→</span>
+    </a>
+
+    <a href="https://youtu.be/nkUYiMFZBmA?si=x80xOz-X5GZ8INWk" target="_blank" class="link-card yt">
+      <div class="link-icon yt">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#ff6b6b"><path d="M23.5 6.2s-.3-2-1.2-2.8c-1.1-1.2-2.4-1.2-3-1.3C16.8 2 12 2 12 2s-4.8 0-7.3.1c-.6.1-1.9.1-3 1.3C.8 4.2.5 6.2.5 6.2S.2 8.5.2 10.8v2.1c0 2.3.3 4.6.3 4.6s.3 2 1.2 2.8c1.1 1.2 2.6 1.1 3.3 1.2C7.2 21.7 12 21.8 12 21.8s4.8 0 7.3-.3c.6-.1 1.9-.1 3-1.3.9-.8 1.2-2.8 1.2-2.8s.3-2.3.3-4.6v-2.1c0-2.3-.3-4.6-.3-4.6zM9.7 15.5V8.4l8.1 3.6-8.1 3.5z"/></svg>
+      </div>
+      <div class="link-text">
+        <div class="link-title">DJI NEO Mini Drone — Review</div>
+        <div class="link-sub">Watch on YouTube</div>
+      </div>
+      <span class="link-arrow">→</span>
+    </a>
+
+    <a href="projects/projects.html" class="link-card ml">
+      <div class="link-icon ml">🧪</div>
+      <div class="link-text">
+        <div class="link-title">My Projects</div>
+        <div class="link-sub">Open source builds &amp; experiments</div>
+      </div>
+      <span class="link-arrow">→</span>
+    </a>
+
+    <a href="ml/model.html" class="link-card ml">
+      <div class="link-icon ml">🤖</div>
+      <div class="link-text">
+        <div class="link-title">Machine Learning Models</div>
+        <div class="link-sub">Computer vision &amp; ML demos</div>
+      </div>
+      <span class="link-arrow">→</span>
+    </a>
+
+    <a href="https://medium.com/geeky-bawa" target="_blank" class="link-card blog">
+      <div class="link-icon med">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#f0c070"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+      </div>
+      <div class="link-text">
+        <div class="link-title">Medium Blogs — Geeky Bawa</div>
+        <div class="link-sub">Articles on ML, CV &amp; tech</div>
+      </div>
+      <span class="link-arrow">→</span>
+    </a>
+
+    <a href="https://vaibhavhariramani.github.io/blogs/" target="_blank" class="link-card blog">
+      <div class="link-icon blog">📝</div>
+      <div class="link-text">
+        <div class="link-title">Personal Blog</div>
+        <div class="link-sub">Deep-dives &amp; tutorials</div>
+      </div>
+      <span class="link-arrow">→</span>
+    </a>
+
+    <a href="AppStore/appStore.html" class="link-card app">
+      <div class="link-icon app">📱</div>
+      <div class="link-text">
+        <div class="link-title">App Store</div>
+        <div class="link-sub">Apps built by Geeky Developers</div>
+      </div>
+      <span class="link-arrow">→</span>
+    </a>
+
+    <a href="https://geekydevelopersteam.github.io/" target="_blank" class="link-card app">
+      <div class="link-icon app">💼</div>
+      <div class="link-text">
+        <div class="link-title">Freelancing Services</div>
+        <div class="link-sub">Geeky Developers Team</div>
+      </div>
+      <span class="link-arrow">→</span>
+    </a>
+
+    <a href="http://wa.me/917790991077?text=Hey+Vaibhav!" target="_blank" class="link-card">
+      <div class="link-icon wa">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#25D366"><path d="M17.4 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-1 1.1-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4-.1-.5-.1-.1-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.1 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.6.2-1.2.1-1.3-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 00-8.7 14.9L2 22l5.3-1.4A10 10 0 1012 2z"/></svg>
+      </div>
+      <div class="link-text">
+        <div class="link-title">WhatsApp — Get Connected</div>
+        <div class="link-sub">Drop a message directly</div>
+      </div>
+      <span class="link-arrow">→</span>
+    </a>
+
+    
+
+    
+
+  </div>
+
+  <!-- SOCIAL PILLS -->
+  <div class="socials-row">
+    <a href="https://www.linkedin.com/in/vaibhav-hariramani/" target="_blank" class="social-pill">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zm2-3a2 2 0 100-4 2 2 0 000 4z"/></svg>
+      LinkedIn
+    </a>
+    <a href="https://github.com/vaibhavhariramani" target="_blank" class="social-pill">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+      GitHub
+    </a>
+    <a href="https://twitter.com/VAIBHAVHARIRAM2" target="_blank" class="social-pill">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+      Twitter
+    </a>
+    <a href="https://www.instagram.com/geeky_bawa_/" target="_blank" class="social-pill">
+      <svg viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" fill="none" stroke="currentColor" stroke-width="2"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2"/></svg>
+      Geeky Bawa
+    </a>
+    <a href="https://discord.gg/cXY3pY7a" target="_blank" class="social-pill">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03z"/></svg>
+      Discord
+    </a>
+  </div>
+
+  <footer>
+    crafted with care · vaibhavhariramani.com
+  </footer>
+
+</div>
+
+<script>
+function fmt(n) {
+  if (n >= 1000000) return (n/1000000).toFixed(1) + 'M';
+  if (n >= 1000) return (n/1000).toFixed(1) + 'K';
+  return n.toString();
+}
+
+const stats = {
+  yt: { subs: 0, views: 0, videos: 0 },
+  ig: { followers: 0, posts: 0, following: 0 }
+};
+
+function renderStats() {
+  document.getElementById('yt-subs').textContent = stats.yt.subs ? fmt(stats.yt.subs) : '—';
+  document.getElementById('yt-views').textContent = stats.yt.views ? fmt(stats.yt.views) : '—';
+  document.getElementById('yt-videos').textContent = stats.yt.videos ? stats.yt.videos : '—';
+  document.getElementById('ig-followers').textContent = stats.ig.followers ? fmt(stats.ig.followers) : '—';
+  document.getElementById('ig-posts').textContent = stats.ig.posts ? stats.ig.posts : '—';
+  document.getElementById('ig-following').textContent = stats.ig.following ? stats.ig.following : '—';
+}
+
+renderStats();
+
+/* ── HOW TO ADD YOUR REAL NUMBERS ─────────────────────────────────────────
+   Option A: Edit directly below and save the file.
+   Option B: Connect a backend / serverless function that fetches from
+             YouTube Data API v3 and updates these values on page load.
+
+   Replace 0 with your actual numbers:
+──────────────────────────────────────────────────────────────────────── */
+const myStats = {
+  yt: { subs: 0, views: 0, videos: 0 },
+  ig: { followers: 0, posts: 0, following: 0 }
+};
+
+Object.assign(stats.yt, myStats.yt);
+Object.assign(stats.ig, myStats.ig);
+renderStats();
+</script>
+</body>
 </html>
-
- 
-
-	
-	
-		
-	
-
-	
-
-
